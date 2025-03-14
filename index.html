@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Site under construction</title>
+    <title>Сайт в разработке</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <style>
         body {
             margin: 0;
@@ -11,8 +12,16 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: url('background.jpg') no-repeat center center fixed;
+            background: url('desktop.jpg') no-repeat center center fixed; 
             background-size: cover;
+        }
+
+        
+        @media (max-width: 768px) {
+            body {
+                background: url('mobile.jpg') no-repeat center center fixed; 
+                background-size: cover;
+            }
         }
     </style>
 </head>
